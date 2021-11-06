@@ -834,6 +834,7 @@ footer .nav ul a {
 }
 
 #cabinet-refinishing-content .content-right .text h1 {
+  margin: 0;
   font-size: 2rem;
 }
 
@@ -916,5 +917,549 @@ footer .nav ul a {
   font-size: 2.5rem;
   padding: 0;
   margin: .5em 0 0 0;
+}
+
+#remodel-hero-section .hero {
+  background-image: url("../img/kitchen-remodel-hero.jpeg");
+  height: 35em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: inset 0 0 0 2000px rgba(46, 45, 46, 0.3);
+          box-shadow: inset 0 0 0 2000px rgba(46, 45, 46, 0.3);
+}
+
+#remodel-hero-section .hero form {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+#remodel-hero-section .hero form .form-text {
+  text-align: center;
+  width: 50%;
+}
+
+#remodel-hero-section .hero form .form-text h3 {
+  font-size: 2.2rem;
+  line-height: 2.4rem;
+  margin-bottom: .5em;
+  text-shadow: 2px 2px 6px #000;
+}
+
+#remodel-hero-section .hero form .form-text p {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1em;
+  text-shadow: 2px 2px 6px #000;
+}
+
+#remodel-hero-section .hero form input {
+  font-family: 'Exo', sans-serif;
+  border-radius: 0;
+  font-size: 0.875rem;
+  padding: .5rem .75rem;
+  height: 3.3vh;
+  width: 23vw;
+  line-height: 1.5;
+  border: 1px solid #ced4da;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+#remodel-hero-section .hero form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+#remodel-hero-section .hero form .form-group label {
+  display: block;
+  margin-bottom: .8em;
+  font-weight: 300;
+}
+
+#remodel-hero-section .hero form #email {
+  width: 47.2vw;
+}
+
+#remodel-hero-section .hero form .form-btn {
+  border: 2px solid #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 47.2vw;
+  height: 4.5vh;
+}
+
+#remodel-hero-section .curve {
+  background-color: #ffffff;
+  color: #eca164;
+  position: absolute;
+  bottom: 31rem;
+  width: 110%;
+  left: -5%;
+  height: 5.5rem;
+  border-top: 12px solid;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+}
+
+#kitchen-remodel-content {
+  padding: 0  7em .9em 7em;
+}
+
+#kitchen-remodel-content .content-right {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 3em;
+}
+
+#kitchen-remodel-content .content-right .text h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+#kitchen-remodel-content .content-right .text p {
+  line-height: 1.5em;
+}
+
+#kitchen-remodel-content .content-right .text ul li {
+  line-height: 1.5em;
+}
+
+#kitchen-remodel-content .content-right .content-right-img {
+  background: url("img/kitchen-remodel-right.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#kitchen-remodel-content .content-left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 3em;
+  margin-top: 4em;
+}
+
+#kitchen-remodel-content .content-left .text h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+#kitchen-remodel-content .content-left .text p {
+  line-height: 1.5em;
+}
+
+#kitchen-remodel-content .content-left .text ul li {
+  line-height: 1.5em;
+}
+
+#kitchen-remodel-content .content-left .content-left-img {
+  background: url("img/kitchen-remodel-left.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#kitchen-remodel-section {
+  height: 25em;
+  background: url("img/cabinet-cta.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#kitchen-remodel-section .curve {
+  background-color: #ffffff;
+  color: #eca164;
+  position: relative;
+  height: 80px;
+  margin-top: 10px;
+  margin-right: -56px;
+  margin-bottom: 20px;
+  margin-left: -87px;
+  border-bottom: 12px solid;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+
+#kitchen-remodel-section .call-out {
+  margin: 0 auto;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.71);
+  height: 16em;
+  width: 45em;
+  text-align: center;
+}
+
+#kitchen-remodel-section .call-out h3 {
+  font-size: 2.5rem;
+  padding: 0;
+  margin: .5em 0 0 0;
+}
+
+#why-hero-section .hero {
+  background-image: url("../img/why-hero.jpeg");
+  height: 35em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: inset 0 0 0 2000px rgba(46, 45, 46, 0.3);
+          box-shadow: inset 0 0 0 2000px rgba(46, 45, 46, 0.3);
+}
+
+#why-hero-section .hero form {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+#why-hero-section .hero form .form-text {
+  text-align: center;
+  width: 50%;
+}
+
+#why-hero-section .hero form .form-text h3 {
+  font-size: 2.2rem;
+  line-height: 2.4rem;
+  margin-bottom: .5em;
+  text-shadow: 2px 2px 6px #000;
+}
+
+#why-hero-section .hero form .form-text p {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1em;
+  text-shadow: 2px 2px 6px #000;
+}
+
+#why-hero-section .hero form input {
+  font-family: 'Exo', sans-serif;
+  border-radius: 0;
+  font-size: 0.875rem;
+  padding: .5rem .75rem;
+  height: 3.3vh;
+  width: 23vw;
+  line-height: 1.5;
+  border: 1px solid #ced4da;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+#why-hero-section .hero form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+#why-hero-section .hero form .form-group label {
+  display: block;
+  margin-bottom: .8em;
+  font-weight: 300;
+}
+
+#why-hero-section .hero form #email {
+  width: 47.2vw;
+}
+
+#why-hero-section .hero form .form-btn {
+  border: 2px solid #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 47.2vw;
+  height: 4.5vh;
+}
+
+#why-hero-section .curve {
+  background-color: #ffffff;
+  color: #eca164;
+  position: absolute;
+  bottom: 31rem;
+  width: 110%;
+  left: -5%;
+  height: 5.5rem;
+  border-top: 12px solid;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+}
+
+#why-content {
+  padding: 0  7em .9em 7em;
+}
+
+#why-content .content-right {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 3em;
+}
+
+#why-content .content-right .text h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+#why-content .content-right .text p {
+  line-height: 1.5em;
+}
+
+#why-content .content-right .text ul li {
+  line-height: 1.5em;
+}
+
+#why-content .content-right .content-right-img {
+  background: url("img/why-right.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#why-content .content-left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 3em;
+  margin-top: 4em;
+}
+
+#why-content .content-left .text h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+#why-content .content-left .text p {
+  line-height: 1.5em;
+}
+
+#why-content .content-left .text ul li {
+  line-height: 1.5em;
+}
+
+#why-content .content-left .content-left-img {
+  background: url("img/why-left.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contact-hero-section .hero {
+  background-image: url("../img/contact-hero.jpeg");
+  height: 15em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: inset 0 0 0 2000px rgba(46, 45, 46, 0.3);
+          box-shadow: inset 0 0 0 2000px rgba(46, 45, 46, 0.3);
+}
+
+#contact-hero-section .hero form {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+#contact-hero-section .hero form .form-text {
+  text-align: center;
+  width: 50%;
+}
+
+#contact-hero-section .hero form .form-text h3 {
+  font-size: 2.2rem;
+  line-height: 2.4rem;
+  margin-bottom: .5em;
+  text-shadow: 2px 2px 6px #000;
+}
+
+#contact-hero-section .hero form .form-text p {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1em;
+  text-shadow: 2px 2px 6px #000;
+}
+
+#contact-hero-section .curve {
+  background-color: #ffffff;
+  color: #eca164;
+  position: absolute;
+  bottom: 54rem;
+  width: 110%;
+  left: -5%;
+  height: 5.5rem;
+  border-top: 12px solid;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+}
+
+#contact-us-section .contact-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50vw 32vw;
+      grid-template-columns: 50vw 32vw;
+  padding: 0 10em 22em 10em;
+}
+
+#contact-us-section .contact-content .contact-form form {
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact-us-section .contact-content .contact-form form .form-text {
+  width: 100%;
+}
+
+#contact-us-section .contact-content .contact-form form .form-text h3 {
+  font-size: 2.2rem;
+  line-height: 2.4rem;
+  margin-bottom: .5em;
+}
+
+#contact-us-section .contact-content .contact-form form .form-text p {
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+#contact-us-section .contact-content .contact-form form input {
+  font-family: 'Exo', sans-serif;
+  border-radius: 0;
+  font-size: 0.875rem;
+  padding: .5rem .75rem;
+  height: 3.3vh;
+  width: 23.2vw;
+  line-height: 1.5;
+  border: 1px solid #ced4da;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+#contact-us-section .contact-content .contact-form form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+#contact-us-section .contact-content .contact-form form .form-group label {
+  display: block;
+  margin-bottom: .8em;
+  font-weight: 300;
+}
+
+#contact-us-section .contact-content .contact-form form #email {
+  width: 47.4vw;
+}
+
+#contact-us-section .contact-content .contact-form form .form-btn {
+  border: 2px solid #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 1rem;
+  width: 47.5vw;
+  height: 3.7vh;
+}
+
+#contact-us-section .contact-content .map h3 {
+  font-size: 1.8rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+#contact-us-section .contact-content .map p {
+  line-height: 1.5rem;
+  margin-left: 1.2em;
+}
+
+#contact-us-section .contact-content .map p span {
+  font-weight: bold;
+}
+
+#contact-us-section .contact-content .map p a {
+  color: #f17e20;
+  text-decoration: none;
+}
+
+#testimonial-section .intro {
+  padding-top: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  body {
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  header {
+    margin: 0;
+    width: 100%;
+  }
+  header .phone-section {
+    margin: 0;
+    width: 100%;
+  }
+  header .phone-section a {
+    margin: 0;
+    width: 100%;
+  }
+  header .menu-section {
+    margin: 0;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
