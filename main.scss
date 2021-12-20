@@ -2,11 +2,122 @@
     box-sizing: border-box;
 }
 
+
 body{
     font-family: 'Exo', sans-serif;
      overflow-x: hidden;
      margin: 0;
 }
+
+//HAMBURGER
+@media only screen and (max-width: 900px){
+    a { color: black; }
+
+.content {
+  background: var(--clr-light);
+  width: 70vw;
+  padding: 3em;
+  box-shadow: 0 0 3em rgba(0,0,0,.15);
+}
+
+.title {
+  margin: 0 0 .5em;
+  font-weight: 900;
+  color: var(--clr-primary);
+  line-height: .8;
+}
+
+.nav {
+  background: var(--clr-light);
+  position: absolute;
+  right: 0;
+  box-shadow: 0 0 3em rgba(0,0,0,.15);
+  transform: translateX(100%);
+  transition: transform 300ms cubic-bezier(.5, 0, .5, 1)
+}
+
+.nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 3em 6em;
+}
+
+.nav__item {
+  margin-bottom: 3em;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.nav__toggle {
+  position: absolute;
+  top: 2em;
+  left: 0;
+  transform: translateX(-100%);
+  background: red;
+  padding: 1em .5em;
+  border: 0;
+  border-radius: .25em 0 0 .25em;
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  width: 2em;
+  height: 3px;
+  background: black;
+  
+  transition: transform 350ms ease-in-out, opacity 200ms linear;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+.hamburger::before { bottom: 6px; }
+.hamburger::after { top: 6px;}
+
+
+/* Navigation open styles */
+
+.nav-open .nav {
+  transform: translateX(0);
+}
+
+/* Change this stuff below */
+
+.nav-open .hamburger {
+  transform: rotate(45deg);
+}
+
+.nav-open .hamburger::before {
+  opacity: 0;
+}
+
+.nav-open .hamburger::after {
+  transform: rotate(90deg) translate(-6px);
+}
+}
+
 
 //BUTTONS
 .btn{
@@ -70,7 +181,7 @@ header{
 
 #hero-section{
     .hero{
-        background-image: url("../img/hero_home.jpeg");
+        background-image: url("img/hero_home.jpeg");
         height: 50em;
         background-position: center; 
         background-repeat: no-repeat; 
@@ -1363,26 +1474,287 @@ footer{
         overflow-x: hidden;
     }
     body{
-        margin: 0;
+        margin: 0 auto;
         max-width: 100%;
         overflow-x: hidden;
     }
     header{
-        margin: 0;
+        margin: 0 auto;
         width: 100%;
 
         .phone-section{
-            margin: 0;
+            margin: 0 auto;
             width: 100%;
 
             a{
-            margin: 0;
+            margin: 0 auto;
             width: 100%;
+            justify-content: center;
             }
         }
         .menu-section{
             margin: 0;
             width: 100%;
+
+            ul{
+                display: flex;
+                margin: 0;
+                padding-left: 1em;
+
+                li{
+                    margin-left: 0;
+                    margin-top: 1em;
+                }
+            }
+        }
+    }
+
+    #hero-section{
+        .hero{
+            height: 23em;
+
+        p{
+            width: 100%;
+            position: unset;
+            text-align: center;
+            line-height: 1.8rem;
+
+            span{
+                font-size: 1.5rem;
+            }
+
+            small{
+                font-size: 1.2rem;
+            }
+        }
+        }
+        form{
+            display: none;
+        }
+
+        .curve{
+            bottom: 38rem;
+        }
+    }
+
+    #content-section{
+        padding: 0 2em;
+        display: block;
+
+    }
+
+    #cta-section{
+        height: 100%;
+
+        .cta-offers{
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+
+            .cta-left{
+                display: block;
+
+                .cta-img{
+                    margin: 0 auto;
+                    width: 90%;
+                    background-position: 50% 20%;
+                }
+
+                .cta-text{
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+
+            span{
+                display: none;
+            }
+
+            .cta-right{
+                display: block;
+                margin: 0;
+                padding-top: 3em;
+                padding-bottom: 2em;
+
+                .cta-img{
+                    margin: 0 auto;
+                    width: 90%;
+                    background-position: 50% 20%;
+                }
+
+                .cta-text{
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    #why-section{
+        .why-content{
+            padding: 1em 2em 3em 2em;
+            display: block;
+        }
+    }
+
+    #testimonial-section{
+        .intro{
+            padding: 0 3em;
+
+            h2{
+                font-size: 1.5rem;
+            }
+
+            p{
+                font-size: 1rem;
+            }
+        }
+
+        .slide-container{
+            width: 80%;
+        }
+    }
+
+    #map-section{
+        grid-template-columns: 1fr;
+        height: 100%;
+
+        .footer-form{
+            form{
+
+                input{
+                    width: 100%;
+                }
+
+                #email{
+                    width: 86vw;
+                }
+
+                .form-btn{
+                    width: 86%;
+                }
+
+                .logo-row{
+                    margin-bottom: 2em;
+                    .img-wrapper{
+                        width: 25vw;
+
+                        .trust-2{
+                            max-width: 12vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding: 1em 1em;
+
+        .nav{
+            display: none;
         }
     }
   }
+
+// // // // // // // MOBILE // // // // // // //
+@media only screen and (max-width: 425px) {
+    #hero-section{
+        .hero{
+            text-align: center;
+            p{
+                padding-top: 2em;
+            }
+
+            .mobile-show{
+                display: inline-block !important;
+                background: #1f5028;
+                font-weight: bold;
+                padding: 1em 3em;
+            }
+        }
+    }
+
+    #hero-section .curve {
+        bottom: 3rem;
+    }
+
+    #map-section{
+        .footer-form{
+            form{
+                .form-btn{
+                    height: 10vh;
+                }
+                input{
+                    padding: 1.2rem .75rem;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    #cabinet-hero-section{
+        .hero{
+            height: 20em;
+
+            form{
+                .form-text{
+                    h3{
+                        font-size: 1.7rem;
+                        line-height: 2rem;
+                    }
+
+                    p{
+                        display: none;
+                    }
+                }
+
+                input{
+                    display: none;
+                }
+
+                .desktop-btn{
+                    display: none !important;
+                }
+
+                .mobile-btn{
+                    display: block !important;
+                    text-shadow: 2px 2px 6px #000;
+                    white-space: nowrap;
+                    width: 70vw;
+                }
+
+                .form-btn{
+                    height: 10vh;
+                }
+            }
+        }
+        
+
+        .curve{
+            bottom: 30rem;
+        }
+    }
+}
+
+
+// // // // // // // LAPTOP // // // // // // // 
+// @media only screen and (max-width: 1440px) {
+//     #hero-section{
+//         .hero{
+//             height: 54em;
+//         }
+//         form{
+//             height: 44vh;
+//             top: 10%;
+//         }
+
+//         .curve{
+//             bottom: 39rem;
+//         }
+//     }
+//   }
